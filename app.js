@@ -21,7 +21,8 @@ var campRoutes = require("./routes/campgrounds"),
 
 // MONGOOSE
 
-mongoose.connect('mongodb://localhost/campify');
+// mongoose.connect('mongodb://localhost/campify');
+mongoose.connect('mongodb://trent:dazmae@ds161823.mlab.com:61823/campify');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
